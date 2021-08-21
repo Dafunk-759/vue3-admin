@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--dk-gray-900);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--dk-gray-700);
+  border-radius: .25rem;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: var(--dk-gray-900);
+}
+
+html {
+  font-size: 15px;
+  color: var(--dk-gray-100);
+}
+
+.body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: 0px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*包含以下五种的链接*/
+a {
+  text-decoration: none;
+  color: var(--dk-gray-100);
+}
+
+/*正常的未被访问过的链接*/
+a:link {
+  text-decoration: none;
+}
+
+/*已经访问过的链接*/
+a:visited {
+  text-decoration: none;
+}
+
+/*鼠标划过(停留)的链接*/
+a:hover {
+  text-decoration: none;
+}
+
+/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+a:active {
+  text-decoration: none;
+}
+
+/* 获得焦点的时候 鼠标松开时显示的颜色*/
+a:focus {
+  text-decoration: none;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--dk-gray-200);
+  border: 0.1rem solid var(--dk-gray-400);
+  border-radius: .5rem;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 10px;
+  }
+}
